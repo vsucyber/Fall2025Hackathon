@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaborative Hackathon Fall 2024</title>
+    <title>Collaborative Hackathon Fall 2025</title>
     <style>
         /* VSU Color Theme */
         :root {
@@ -13,7 +13,7 @@
             --vsu-white: #ffffff;
             --vsu-gray: #f4f4f4;
             --disabled-btn: #cccccc;
-            --challenges-bg: #ffd966; /* New background color for challenges */
+            --challenges-bg: #ffd966;
         }
 
         body {
@@ -89,7 +89,6 @@
             color: var(--vsu-light-orange);
         }
 
-        /* Logo Container */
         .logo-container {
             display: flex;
             justify-content: center;
@@ -103,7 +102,6 @@
             height: auto;
         }
 
-        /* Box Container */
         .box-container {
             display: flex;
             justify-content: center;
@@ -112,7 +110,6 @@
             flex-wrap: wrap;
         }
 
-        /* Registration and Challenges Boxes */
         .box {
             background-color: var(--vsu-light-orange);
             padding: 20px;
@@ -123,12 +120,10 @@
             max-width: 400px;
         }
 
-        /* Challenges Box */
         .challenges-box {
             background-color: var(--challenges-bg);
         }
 
-        /* Blinking Animation */
         @keyframes blink {
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
@@ -149,7 +144,6 @@
             margin-bottom: 15px;
         }
 
-        /* Register Button Styling */
         .register-btn {
             background-color: var(--vsu-blue);
             color: var(--vsu-white);
@@ -186,7 +180,6 @@
             margin: 5px 0;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             header img {
                 width: 80px;
@@ -202,14 +195,15 @@
             }
         }
     </style>
+
     <script>
         window.onload = function() {
             const today = new Date();
-            const deadline = new Date('2024-11-05');
+            const deadline = new Date('2025-11-13');
             const registerButton = document.getElementById('register-btn');
-            const challengesHeading = document.getElementById('challenges-heading');
-            
-            // Set registration status
+            const topicsHeading = document.getElementById('topics-heading');
+
+            // Registration status
             if (today > deadline) {
                 document.getElementById('registration-status').textContent = 'Registration Closed';
                 registerButton.classList.add('disabled');
@@ -219,10 +213,10 @@
                 registerButton.disabled = false;
             }
 
-            // Apply blinking effect for one day
-            const blinkEndDate = new Date('2024-11-05');
+            // Blinking for upcoming topics
+            const blinkEndDate = new Date('2025-11-14');
             if (today <= blinkEndDate) {
-                challengesHeading.classList.add('blinking');
+                topicsHeading.classList.add('blinking');
             }
         }
     </script>
@@ -230,14 +224,12 @@
 <body>
 
 <header>
-    <h1>Collaborative Hackathon Fall 2024</h1>
-    <p>A Global Hackathon Involving Virginia State University, National Taipei University, and Technical University of Moldova</p>
+    <h1>Collaborative Hackathon Fall 2025</h1>
+    <p>A Global Hackathon Involving Virginia State University and National Taipei University</p>
 
-    <!-- Logos of Participating Universities -->
     <div class="logo-container">
         <img src="ntpu-logo.jfif" alt="National Taipei University Logo">
-        <img src="tuom-logo.jfif" alt="Technical University of Moldova Logo">
-        <img src="vsu-logo.jfif" alt="VSU Logo">
+        <img src="vsu-logo.jfif" alt="Virginia State University Logo">
     </div>
 </header>
 
@@ -245,100 +237,73 @@
     <a href="#home">Home</a>
     <a href="#objectives">Objectives</a>
     <a href="#why-participate">Why Participate</a>
-    <a href="#challenges">Challenges</a>
+    <a href="#topics">Application Topics</a>
     <a href="#prizes">Prizes</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- Box Container for Registration and Challenges -->
 <div class="box-container">
-    <!-- Registration Box -->
     <div class="box">
         <h2>Register for the Hackathon</h2>
         <p id="registration-status">Checking status...</p>
-        <a href="https://forms.gle/pvAp7kXqZZvkvj2P6" id="register-btn" class="register-btn">Register Here</a>
-        <p>Deadline for registration is Nov 4, 2024</p>
+        <a href="https://forms.gle/your-new-link" id="register-btn" class="register-btn">Register Here</a>
+        <p>Deadline for registration is Nov 13, 2025</p>
     </div>
 
-    <!-- Challenges Box -->
     <div class="box challenges-box">
-        <h2 id="challenges-heading">Challenges</h2>
-        <p>Explore our highlighted problem statements and select one that excites you:</p>
-        <ul>
-            <li><a href="Alzheimer Assistant App.pdf" target="_blank">Alzheimer Assistant Application</a></li>
-            <li><a href="Automated Attendance and Safety Monitoring Application.pdf" target="_blank">Automated Attendance and Safety Monitoring Application</a></li>
-        </ul>
+        <h2 id="topics-heading">Application Topics</h2>
+        <p><strong>WILL BE RELEASED ON NOV 14, 2025</strong></p>
+        <p>Focus: Develop innovative mobile applications (iOS or Android) that demonstrate creativity, design excellence, and strong prototype implementation.</p>
     </div>
 </div>
 
 <div class="container">
     <section id="home" class="section">
-        <h2>Welcome to Collaborative Hackathon Fall 2024</h2>
-        <p>The Collaborative Hackathon Fall 2024 brings together students from Virginia State University, National Taipei University, and Technical University of Moldova to solve real-world challenges using AI, IoT, cloud computing, data analytics, and other innovative technologies. This event mirrors real-world scenarios, where international collaboration is key to solving complex problems.</p>
-<<<<<<< HEAD
-<p>The registration period is now open! Spaces are limited, and successful applicants will be notified of their selection by <strong>November 4, 2024</strong>. The hackathon officially begins on <strong>November 4, 2024</strong>, with the release of the problem set, and will conclude on <strong>November 11, 2024</strong> as teams present their innovative solutions!</p>
-=======
-        <p>The registration period is now open! Spaces are limited, and successful applicants will be notified of their selection by <strong>November 4, 2024</strong>. The hackathon officially begins on <strong>November 4, 2024</strong>, with the release of the problem set, and will conclude on <strong>November 11, 2024</strong> as teams present their innovative solutions!</p>
->>>>>>> ab820a8 (challenges)
+        <h2>Welcome to Collaborative Hackathon Fall 2025</h2>
+        <p>The Collaborative Hackathon Fall 2025 challenges students from Virginia State University and National Taipei University to design, prototype, and present mobile applications (iOS or Android) that solve real-world problems through innovation, usability, and strong visual design. The hackathon encourages creativity, cross-border teamwork, and a focus on user-centered development.</p>
     </section>
 
-    <!-- Remaining content unchanged -->
     <section id="objectives" class="section">
         <h2>Objectives of the Hackathon</h2>
         <ul>
-            <li>Encourage cross-cultural collaboration between students from three countries.</li>
-            <li>Challenge students with technical and design problems requiring innovative solutions.</li>
-            <li>Provide real-world experience by simulating international teamwork in software engineering environments.</li>
-            <li>Enhance communication skills across time zones and cultural contexts.</li>
+            <li>Promote international collaboration between VSU and NTPU students.</li>
+            <li>Foster creativity in mobile app design and prototype development.</li>
+            <li>Encourage structured design thinking and strong UI/UX practices.</li>
+            <li>Provide experience in presenting and pitching ideas effectively.</li>
         </ul>
     </section>
 
     <section id="why-participate" class="section">
         <h2>Why Participate?</h2>
-        <p>Gain real-world experience, network with peers and professionals, enhance your resume, and win exciting prizes. Showcase your creativity and collaboration skills across time zones!</p>
+        <p>Gain experience in real-world app design and development, network internationally, enhance your resume, and bring your creative ideas to life. Whether you’re new to app development or experienced, this event is a chance to show your skills and teamwork.</p>
     </section>
 
     <section id="prizes" class="section">
         <h2>Prizes</h2>
-        <p>Exciting electronics and cash prizes will be awarded to the winning teams.</p>
+        <p>Top teams will receive certificates and exciting tech prizes recognizing creativity, design quality, and innovation.</p>
     </section>
 
     <section id="judging-criteria" class="section">
         <h2>Judging Criteria</h2>
-        <p>Submissions will be evaluated based on the following:</p>
         <ul>
-            <li>Information Gathering and Gap Analysis (15%)</li>
-            <li>Proposed Solution (20%)</li>
-            <li>Design and Usability (15%)</li>
-            <li>Feasibility (15%)</li>
-            <li>Creativity (10%)</li>
-            <li>Collaboration and Presentation (25%)</li>
+            <li>Design Quality and Wireframes (25%)</li>
+            <li>Innovation and Concept (20%)</li>
+            <li>Prototype Implementation (20%)</li>
+            <li>Usability and User Experience (15%)</li>
+            <li>Feasibility and Presentation (20%)</li>
         </ul>
-    </section>
-
-    <section id="faq" class="section faq">
-        <h2>Frequently Asked Questions</h2>
-        <dl>
-            <dt>Who can participate?</dt>
-            <dd>Students from Virginia State University, National Taipei University, and Technical University of Moldova.</dd>
-            <dt>What kind of skills do I need?</dt>
-            <dd>Basic knowledge in computer science, IoT, AI, and data analytics is useful but not mandatory. Teamwork and creativity matter the most!</dd>
-            <dt>How do I form a team?</dt>
-            <dd>Teams are composed of six students, with two students from each participating university. After registering, you will have access to a list of participants. You can connect with potential teammates via the Slack channel or email to form or join a team.</dd>
-        </dl>
     </section>
 
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>For more information or queries, feel free to contact:</p>
+        <p>For more information or queries, contact:</p>
         <p><strong>Email:</strong> <a href="mailto:mrais@vsu.edu">mrais@vsu.edu</a> or <a href="mailto:jlee@vsu.edu">jlee@vsu.edu</a></p>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 Collaborative Hackathon. All rights reserved.</p>
+    <p>&copy; 2025 Collaborative Hackathon. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-
